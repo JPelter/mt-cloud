@@ -1,6 +1,7 @@
 variables:
   appFolder: 'mtcloud'
   registry: 'pelter-gmail-dockerhub'
+  registryUser: 'jpelter'
   imageName: 'mtcloud-react-frontend'
 
 pr: none
@@ -25,7 +26,7 @@ jobs:
     displayName: Build
     inputs:
       command: build
-      repository: jakepelter/$(imageName)
+      repository: $(registryUser)/$(imageName)
       dockerfile: $(appFolder)/Dockerfile
       tags: |
         $(Build.BuildId)
@@ -34,7 +35,7 @@ jobs:
     displayName: Push
     inputs:
       command: push
-      repository: jakepelter/$(imageName)
+      repository: $(registryUser)/$(imageName)
       containerRegistry: $(registry)
       tags: |
         $(Build.BuildId)
