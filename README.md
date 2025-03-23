@@ -4,4 +4,5 @@ This repo contains the code for the MT Cloud homepage as well as configuration f
 ## mtcloud
 The homepage for the company MT Cloud LLC
 
-## cert-issuer 
+## cert-issuer
+This is the cert-manager cert-issuer for the entire Kubernetes cluster.
