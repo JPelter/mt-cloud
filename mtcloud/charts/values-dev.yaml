@@ -1,0 +1,9 @@
+image: docker.io/jakepelter/mtcloud-react-frontend
+imageTag:
+imagePullSecret: pelter-gmail-dockerhub
+
+replicas: 1
+
+port: 80
+ingressHost: dev-mtcloud.ovh-k8s.mtcloud.tech
+ingressRateLimit: '10'
