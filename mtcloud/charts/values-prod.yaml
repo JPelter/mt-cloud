@@ -5,5 +5,5 @@ imagePullSecret: pelter-gmail-dockerhub
 replicas: 1
 
 port: 80
-ingressHost: dev-mtcloud.ovh-k8s.mtcloud.tech
+ingressHost: mtcloud.tech
 ingressRateLimit: '10'
